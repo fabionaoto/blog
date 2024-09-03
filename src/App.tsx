@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const App: React.FC = () => {
   // Example state for demonstration
-  const [count, setCount] = useState(0);
+  const [count, ] = useState(0);
 
   useEffect(() => {
     console.log(`The count is: ${count}`);
@@ -71,7 +71,7 @@ const App: React.FC = () => {
 
       <p>Next, we will write the most basic form of useEffect, which looks like this:</p>
 
-      <pre><code>{`useEffect(() =&gt; {}, []);`}</code></pre>
+      <pre><code>{`useEffect(() => {}, []);`}</code></pre>
 
       <p>
         In this example, we have created our first side effect, although it currently does nothing. The structure of useEffect consists of three main parts:
@@ -133,7 +133,7 @@ const App: React.FC = () => {
         In our example, including <code>count</code> in the dependency array ensures that the effect runs whenever the count updates. If you need to track multiple dependencies, simply include them in the array:
       </p>
 
-      <pre><code>{`useEffect(() =&gt; {
+      <pre><code>{`useEffect(() => {
         // Your code here
       }, [count, otherDependency]);`}</code></pre>
 
