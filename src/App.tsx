@@ -158,17 +158,6 @@ const App: React.FC = () => {
       <p>
         The useEffect hook is a powerful tool in React that can help you manage side effects and state changes efficiently. By understanding its structure and how to properly use dependencies, you can create dynamic and responsive applications. Practice implementing useEffect in various scenarios to become more comfortable with its capabilities.
       </p>
-
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1517498025800-0b9b28e6b0b4?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w1NzQyNTd8MHwxfHNlYXJjaHwxfHxFbmdpbmVlcmluZyUyMFJlYWN0fGVufDB8MHx8MTcyNTM3ODE1M3ww&amp;ixlib=rb-4.0.3&amp;q=85"
-          alt="React Development"
-          style={{ width: '100%', objectFit: 'cover' }}
-        />
-        <div style={{ margin: 0, padding: 0, fontSize: 'small' }}>
-          Photo by <a href="https://unsplash.com/@rawpixel/?utm_source=videotoblog&amp;utm_medium=referral">Rawpixel</a> on <a href="https://unsplash.com/?utm_source=videotoblog&amp;utm_medium=referral">Unsplash</a>
-        </div>
-      </div>
     </div>
   );
 };
