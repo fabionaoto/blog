@@ -29,16 +29,16 @@ const App: React.FC = () => {
         In the world of React, hooks have revolutionized the way we handle state and side effects in functional components. One of the most powerful hooks is <strong>useEffect</strong>, which allows developers to perform side effects in their applications. This guide will break down everything you need to know about useEffect, from its structure to its practical applications, ensuring you can implement it effectively in your projects.
       </p>
 
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w1NzQyNTd8MHwxfHNlYXJjaHwxfHxSZWFjdCUyMEhvb2tzfGVufDB8MHx8fDE3MjUzNzgxNTN8MA&amp;ixlib=rb-4.0.3&amp;q=85"
-          alt="React Hooks"
-          style={{ width: '100%', objectFit: 'cover' }}
-        />
-        <div className="roboto-thin" style={{ margin: 0, padding: 0, fontSize: 'small' }}>
-          Photo by <a href="https://unsplash.com/@lautaroandreani/?utm_source=videotoblog&amp;utm_medium=referral">Lautaro Andreani</a> on <a href="https://unsplash.com/?utm_source=videotoblog&amp;utm_medium=referral">Unsplash</a>
-        </div>
+      
+      <img
+        src="https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w1NzQyNTd8MHwxfHNlYXJjaHwxfHxSZWFjdCUyMEhvb2tzfGVufDB8MHx8fDE3MjUzNzgxNTN8MA&amp;ixlib=rb-4.0.3&amp;q=85"
+        alt="React Hooks"
+        style={{ width: '100%', objectFit: 'cover' }}
+      />
+      <div className="roboto-thin" style={{ padding: 0, marginBottom: '16px'}}>
+        Photo by <a href="https://unsplash.com/@lautaroandreani/?utm_source=videotoblog&amp;utm_medium=referral">Lautaro Andreani</a> on <a href="https://unsplash.com/?utm_source=videotoblog&amp;utm_medium=referral">Unsplash</a>
       </div>
+      
 
       <h2 className="roboto-bold">Understanding useEffect</h2>
 
@@ -50,15 +50,13 @@ const App: React.FC = () => {
         In most applications, side effects are triggered by changing state. This means that when a piece of state changes, you can have corresponding actions that take place, allowing you to create dynamic and responsive applications. The beauty of useEffect lies in its flexibility; you have complete control over how you structure your state and the side effects that arise from it.
       </p>
 
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1675521005096-729123cd1dc8?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w1NzQyNTd8MHwxfHNlYXJjaHwxfHxTaWRlJTIwRWZmZWN0c3xlbnwwfDB8fHwxNzI1Mzc4MTUzfDA&amp;ixlib=rb-4.0.3&amp;q=85"
-          alt="Side Effects"
-          style={{ width: '100%', objectFit: 'cover' }}
-        />
-        <div className="roboto-thin" style={{ margin: 0, padding: 0, fontSize: 'small' }}>
-          Photo by <a href="https://unsplash.com/@lancereis/?utm_source=videotoblog&amp;utm_medium=referral">Lance Reis</a> on <a href="https://unsplash.com/?utm_source=videotoblog&amp;utm_medium=referral">Unsplash</a>
-        </div>
+      <img
+        src="https://images.unsplash.com/photo-1675521005096-729123cd1dc8?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w1NzQyNTd8MHwxfHNlYXJjaHwxfHxTaWRlJTIwRWZmZWN0c3xlbnwwfDB8fHwxNzI1Mzc4MTUzfDA&amp;ixlib=rb-4.0.3&amp;q=85"
+        alt="Side Effects"
+        style={{ width: '100%', objectFit: 'cover' }}
+      />
+      <div className="roboto-thin" style={{ padding: 0, marginBottom: '16px' }}>
+        Photo by <a href="https://unsplash.com/@lancereis/?utm_source=videotoblog&amp;utm_medium=referral">Lance Reis</a> on <a href="https://unsplash.com/?utm_source=videotoblog&amp;utm_medium=referral">Unsplash</a>
       </div>
 
       <h2 className="roboto-bold">Setting Up Your First useEffect</h2>
@@ -85,16 +83,14 @@ const App: React.FC = () => {
         <li><strong>Optional return function:</strong> This can be used for cleanup purposes, such as unsubscribing from events or clearing timers.</li>
       </ul>
 
-      <div>
         <img
           src="https://images.unsplash.com/photo-1504617063510-c86ab601b800?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w1NzQyNTd8MHwxfHNlYXJjaHwxfHxDb3VudGVyJTIwQXBwbGljYXRpb258ZW58MHwwfHx8MTcyNTM3ODE1M3ww&amp;ixlib=rb-4.0.3&amp;q=85"
           alt="Counter Application"
           style={{ width: '100%', objectFit: 'cover' }}
         />
-        <div className="roboto-thin" style={{ margin: 0, padding: 0, fontSize: 'small' }}>
+        <div className="roboto-thin" style={{padding: 0, marginBottom: '16px' }}>
           Photo by <a href="https://unsplash.com/@kyleunderscorehead/?utm_source=videotoblog&amp;utm_medium=referral">Kyle Head</a> on <a href="https://unsplash.com/?utm_source=videotoblog&amp;utm_medium=referral">Unsplash</a>
         </div>
-      </div>
 
       <h2 className="roboto-bold">Implementing Side Effects</h2>
 
@@ -114,15 +110,13 @@ const App: React.FC = () => {
         With this setup, the console will log the current count every time it changes. On the initial render, it will log the count as zero. If we increment the count, the console will display the updated count.
       </p>
 
-      <div>
-        <img
-          src="https://images.unsplash.com/photo-1610647752706-3bb12232b3ab?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w1NzQyNTd8MHwxfHNlYXJjaHwxfHxDb25zb2xlJTIwTG9nZ2luZ3xlbnwwfDB8fHwxNzI1Mzc4MTUzfDA&amp;ixlib=rb-4.0.3&amp;q=85"
-          alt="Console Logging"
-          style={{ width: '100%', objectFit: 'cover' }}
-        />
-        <div className="roboto-thin" style={{ margin: 0, padding: 0, fontSize: 'small' }}>
-          Photo by <a href="https://unsplash.com/@isthatbrock/?utm_source=videotoblog&amp;utm_medium=referral">Brock Wegner</a> on <a href="https://unsplash.com/?utm_source=videotoblog&amp;utm_medium=referral">Unsplash</a>
-        </div>
+      <img
+        src="https://images.unsplash.com/photo-1610647752706-3bb12232b3ab?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w1NzQyNTd8MHwxfHNlYXJjaHwxfHxDb25zb2xlJTIwTG9nZ2luZ3xlbnwwfDB8fHwxNzI1Mzc4MTUzfDA&amp;ixlib=rb-4.0.3&amp;q=85"
+        alt="Console Logging"
+        style={{ width: '100%', objectFit: 'cover' }}
+      />
+      <div className="roboto-thin" style={{ padding: 0, marginBottom: '16px' }}>
+        Photo by <a href="https://unsplash.com/@isthatbrock/?utm_source=videotoblog&amp;utm_medium=referral">Brock Wegner</a> on <a href="https://unsplash.com/?utm_source=videotoblog&amp;utm_medium=referral">Unsplash</a>
       </div>
 
       <h2 className="roboto-bold">Understanding the Dependency Array</h2>
